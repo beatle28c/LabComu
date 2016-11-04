@@ -1,0 +1,90 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.8.2.jar:/usr/share/bluej/userlib/pi4j-core.jar:/usr/share/bluej/userlib/pi4j-gpio-extension.jar:/usr/share/bluej/userlib/pi4j-device.jar:/usr/share/bluej/userlib/pi4j-service.jar:/home/pi/LabComu
+-d
+/home/pi/LabComu/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/usr/share/bluej/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/home/pi/LabComu/MainApp.java
+<---- end of javadoc command ---->
+Loading source file /home/pi/LabComu/MainApp.java...
+Constructing Javadoc information...
+/home/pi/LabComu/MainApp.java:16: error: package com.digi.xbee.api does not exist
+import com.digi.xbee.api.RemoteXBeeDevice;
+                        ^
+/home/pi/LabComu/MainApp.java:17: error: package com.digi.xbee.api does not exist
+import com.digi.xbee.api.XBeeDevice;
+                        ^
+/home/pi/LabComu/MainApp.java:18: error: package com.digi.xbee.api.exceptions does not exist
+import com.digi.xbee.api.exceptions.XBeeException;
+                                   ^
+/home/pi/LabComu/MainApp.java:19: error: package com.digi.xbee.api.io does not exist
+import com.digi.xbee.api.io.IOLine;
+                           ^
+/home/pi/LabComu/MainApp.java:20: error: package com.digi.xbee.api.io does not exist
+import com.digi.xbee.api.io.IOSample;
+                           ^
+/home/pi/LabComu/MainApp.java:21: error: package com.digi.xbee.api.listeners does not exist
+import com.digi.xbee.api.listeners.IIOSampleReceiveListener;
+                                  ^
+/home/pi/LabComu/MainApp.java:46: error: cannot find symbol
+	private static final IOLine HUMEDAD = IOLine.DIO0_AD0;
+	                     ^
+  symbol:   class IOLine
+  location: class MainApp
+/home/pi/LabComu/MainApp.java:47: error: cannot find symbol
+        private static final IOLine PRESION = IOLine.DIO1_AD1;
+                             ^
+  symbol:   class IOLine
+  location: class MainApp
+/home/pi/LabComu/MainApp.java:48: error: cannot find symbol
+        private static final IOLine POSICION = IOLine.DIO3_AD3;
+                             ^
+  symbol:   class IOLine
+  location: class MainApp
+/home/pi/LabComu/MainApp.java:85: error: cannot find symbol
+	private static class AnalogSampleListener implements IIOSampleReceiveListener {
+	                                                     ^
+  symbol:   class IIOSampleReceiveListener
+  location: class MainApp
+/home/pi/LabComu/MainApp.java:88: error: cannot find symbol
+		public void ioSampleReceived(RemoteXBeeDevice remoteDevice, IOSample ioSample) {
+		                             ^
+  symbol:   class RemoteXBeeDevice
+  location: class AnalogSampleListener
+/home/pi/LabComu/MainApp.java:88: error: cannot find symbol
+		public void ioSampleReceived(RemoteXBeeDevice remoteDevice, IOSample ioSample) {
+		                                                            ^
+  symbol:   class IOSample
+  location: class AnalogSampleListener
+Standard Doclet version 1.8.0_65
+Building tree for all the packages and classes...
+Generating /home/pi/LabComu/doc/MainApp.html...
+Generating /home/pi/LabComu/doc/package-frame.html...
+Generating /home/pi/LabComu/doc/package-summary.html...
+Generating /home/pi/LabComu/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /home/pi/LabComu/doc/allclasses-frame.html...
+Generating /home/pi/LabComu/doc/allclasses-noframe.html...
+Generating /home/pi/LabComu/doc/index.html...
+Generating /home/pi/LabComu/doc/stylesheet.css...
+12 warnings
